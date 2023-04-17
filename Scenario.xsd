@@ -1,0 +1,20 @@
+﻿<xs:schema attributeFormDefault='unqualified' elementFormDefault='qualified' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+  <xs:include schemaLocation='ComplaintLevel.xsd'/>
+  <xs:include schemaLocation='If.xsd'/>
+  <xs:include schemaLocation='Header.xsd'/>
+  <xs:include schemaLocation='List.xsd'/>
+  <xs:include schemaLocation='LocalImport.xsd'/>
+  <xs:element name='Scenario'>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name='Header' type='xs:string' minOccurs='1' maxOccurs='1' />
+          <xs:element ref='List' minOccurs='1' maxOccurs='unbounded' />
+          <xs:element ref="If" maxOccurs="unbounded" />
+          <xs:element ref="LocalImport" maxOccurs="unbounded" />
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute ref='ComplaintLevel' use='required'/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

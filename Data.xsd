@@ -1,0 +1,10 @@
+﻿<xs:schema attributeFormDefault='unqualified' elementFormDefault='qualified' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+  <xs:include schemaLocation='Side.xsd'/>
+  <xs:element name='Data'>
+    <xs:complexType>
+      <xs:attribute name='Key' type='xs:string' use='required' />
+      <xs:attribute name='Value' type='xs:string' use='required' />
+      <xs:attribute ref='Side' use='optional' />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

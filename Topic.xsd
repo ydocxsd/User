@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation='Data.xsd'/>
+  <xs:include schemaLocation='Grid.xsd'/>
+  <xs:include schemaLocation='HPIElement.xsd'/>
+  <xs:include schemaLocation='If.xsd'/>
+  <xs:include schemaLocation='LocalImport.xsd'/>
+  <xs:include schemaLocation='Park.xsd'/>
+  <xs:include schemaLocation='Replace.xsd'/>
+  <xs:include schemaLocation='Score.xsd'/>
+  <xs:include schemaLocation='Text.xsd'/>
+  <xs:include schemaLocation='TopicImport.xsd'/>
+  <xs:include schemaLocation='Variable.xsd'/>
+  <xs:include schemaLocation='WebQuery.xsd'/>
+  <xs:element name="Topic">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element ref="Data" maxOccurs="unbounded"/>
+          <xs:element ref="Grid" maxOccurs="unbounded"/>
+          <xs:element ref="HPIElement" maxOccurs="unbounded"/>
+          <xs:element ref="If" maxOccurs="unbounded"/>
+          <xs:element ref="LocalImport" maxOccurs="unbounded"/>
+          <xs:element ref="Park" maxOccurs="1"/>
+          <xs:element ref="Replace" maxOccurs="unbounded" />
+          <xs:element ref="Score" maxOccurs="unbounded" />
+          <xs:element ref="Text" maxOccurs="unbounded"/>
+          <xs:element ref="TopicImport" maxOccurs="unbounded"/>
+          <xs:element ref="Variable" maxOccurs="unbounded"/>
+        </xs:choice>
+        <xs:element ref="WebQuery" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>      
+      <xs:attribute name="DefaultPhrase" type="xs:boolean" use="optional" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

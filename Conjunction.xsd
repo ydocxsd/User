@@ -1,0 +1,8 @@
+﻿<xs:schema attributeFormDefault='unqualified' elementFormDefault='qualified' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+  <xs:element name='Conjunction'>
+    <xs:complexType>
+      <xs:attribute name='Key' type='xs:string' use='required' />
+      <xs:attribute name='Value' type='xs:string' use='required' />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

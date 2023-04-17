@@ -1,0 +1,21 @@
+﻿<xs:schema attributeFormDefault='unqualified' elementFormDefault='qualified' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+  <xs:element name='HPIElement'>
+    <xs:complexType>
+      <xs:attribute name='Key' use='required' >
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Location"/>
+            <xs:enumeration value="Quality"/>
+            <xs:enumeration value="Severity"/>
+            <xs:enumeration value="Duration"/>
+            <xs:enumeration value="Timing"/>
+            <xs:enumeration value="Context"/>
+            <xs:enumeration value="Modifying factors"/>
+            <xs:enumeration value="Associated signs and symptoms"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name='Value' type='xs:string' use='required' />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

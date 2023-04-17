@@ -1,0 +1,30 @@
+﻿<xs:schema attributeFormDefault='unqualified' elementFormDefault='qualified' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+  <xs:element name='EM2023'>
+    <xs:complexType>
+      <xs:attribute name='Key' use='required' >
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Problem"/>
+            <xs:enumeration value="Data"/>
+            <xs:enumeration value="Risk"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name='ItemKey' use='required' >
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <!-- Data Items-->
+            <xs:enumeration value="Historian"/>
+            <xs:enumeration value="ExData"/>
+            <xs:enumeration value="Test"/>
+            <xs:enumeration value="Interpretation"/>
+            <xs:enumeration value="Consult"/>
+            <!-- Risk Items-->
+            <xs:enumeration value="PrecriptionDrug"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name='Value' type='xs:string' use='required' />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

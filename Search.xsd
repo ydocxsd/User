@@ -1,0 +1,15 @@
+﻿<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation='Header.xsd'/>
+  <xs:element name="Search">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Header" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="Description"  type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="Term" minOccurs="1" maxOccurs="unbounded"  type="xs:string" />
+      </xs:sequence>
+      <xs:attribute name ="Key" type="xs:string" use="required"/>
+      <xs:attribute name ="RefineSide" type="xs:string" use="optional"/>
+      <xs:attribute name ="ItemKey" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation='Button.xsd'/>
+  <xs:include schemaLocation='Border.xsd'/>
+  <xs:include schemaLocation='Header.xsd'/>
+  <xs:element name="Row">
+    <xs:complexType>
+      <xs:choice>
+        <xs:sequence>
+          <xs:element ref="Border" minOccurs="0" maxOccurs="1"/>
+          <xs:element ref="Header" minOccurs="0" maxOccurs="1"/>
+          <xs:element ref="Button" minOccurs="0" maxOccurs="unbounded" >
+          </xs:element>
+        </xs:sequence>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

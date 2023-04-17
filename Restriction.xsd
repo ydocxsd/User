@@ -1,0 +1,50 @@
+﻿<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:attribute name="Restriction">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value='Pediatric'/>
+        <xs:enumeration value='Adult'/>
+        <xs:enumeration value='ChildBearing'/>
+        <xs:enumeration value='DrugsAlcohol'/>
+        <xs:enumeration value='Infant'/>
+        <xs:enumeration value='DayCare'/>
+        <xs:enumeration value='DayCare+'/>
+        <xs:enumeration value='PreSchool'/>
+        <xs:enumeration value='PreSchool+'/>
+        <xs:enumeration value='School'/>
+        <xs:enumeration value='School+'/>
+        <xs:enumeration value='College'/>
+        <xs:enumeration value='College+'/>
+        <xs:enumeration value='Employment'/>
+        <xs:enumeration value='Retirement'/>
+        <xs:enumeration value='Female'/>
+        <xs:enumeration value='FemaleVerbal'/>
+        <xs:enumeration value='Male'/>
+        <xs:enumeration value='MaleVerbal'/>
+        <xs:enumeration value='Psychiatric'/>
+        <xs:enumeration value='SexualAssault'/>
+        <xs:enumeration value='Sports'/>
+        <xs:enumeration value='Tobacco'/>
+        <xs:enumeration value='Verbal'/>
+        <xs:enumeration value='Walking'/>
+        <xs:enumeration value='Orthopedic'/>
+        <xs:enumeration value='Diverticulitis'/>
+        <xs:enumeration value='Coronary Artery Disease'/>
+        <xs:enumeration value='Thoracic Aortic Dissection'/>
+        <xs:enumeration value='Pulmonary Embolism'/>
+        <xs:enumeration value='COPD'/>
+        <xs:enumeration value='PVD'/>
+        <xs:enumeration value='Asthma'/>
+        <xs:enumeration value='Abdominal Aortic Aneurysm'/>
+        <xs:enumeration value='Temporal Arteritis'/>
+        <xs:enumeration value='Urolithiasis'/>
+        <xs:enumeration value='Cholelithiasis'/>
+        <xs:enumeration value='Pyloric Stenosis'/>
+        <xs:enumeration value='Code Status'/>
+        <xs:enumeration value='STI'/>
+        <xs:enumeration value='Endocarditis'/>
+        <xs:enumeration value='Pericarditis'/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+</xs:schema>

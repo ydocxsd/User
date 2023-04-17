@@ -1,0 +1,17 @@
+﻿<xs:schema attributeFormDefault='unqualified' elementFormDefault='qualified' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+  <xs:include schemaLocation='Side.xsd'/>
+  <xs:include schemaLocation='Header.xsd'/>
+  <xs:include schemaLocation='Replace.xsd'/>
+  <xs:element name='TopicImport'>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Header" minOccurs="0" maxOccurs="1" />
+        <xs:element ref="Replace" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+      <xs:attribute name='Key' type='xs:string' use='required' />
+      <xs:attribute ref='Side' use='optional' />
+      <xs:attribute name='RemainingKey' type='xs:string' use='optional'/>
+      <xs:attribute name='ItemKey' type='xs:string' use='optional'/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
