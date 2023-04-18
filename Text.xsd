@@ -5,7 +5,7 @@
     <xs:complexType>
       <xs:sequence>
         <xs:choice maxOccurs="unbounded">
-          <xs:element ref="Conjunction" maxOccurs="unbounded"/>
+          <xs:element ref="Conjunction" minOccurs="0" maxOccurs="unbounded"/>
           <xs:element ref="TextOption"/>
         </xs:choice>
       </xs:sequence>
