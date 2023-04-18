@@ -6,7 +6,7 @@
       <xs:sequence>
         <xs:choice maxOccurs="unbounded">
           <xs:element ref="Conjunction" minOccurs="0" maxOccurs="unbounded"/>
-          <xs:element ref="TextOption"/>
+          <xs:element ref="TextOption" maxOccurs="unbounded"/>
         </xs:choice>
       </xs:sequence>
       <xs:attribute name="Key" type="xs:string" use="required" />
