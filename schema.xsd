@@ -26,7 +26,7 @@
   <xs:include schemaLocation='Side.xsd'/>
   <xs:include schemaLocation='Task.xsd'/>
   <xs:include schemaLocation='Text.xsd'/>
-  <xs:include schemaLocation='TextOptions.xsd'/>
+  <xs:include schemaLocation='TextOption.xsd'/>
   <xs:include schemaLocation='Timestamp.xsd'/>
   <xs:include schemaLocation='Topic.xsd'/>
   <xs:include schemaLocation='TopicImport.xsd'/>
