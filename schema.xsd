@@ -13,7 +13,7 @@
   <xs:include schemaLocation='If.xsd'/>
   <xs:include schemaLocation='List.xsd' />
   <xs:include schemaLocation='LocalImport.xsd' />
-  <xs:include schemaLocation='Marchfield.xsd' />
+  <xs:include schemaLocation='Marshfield.xsd' />
   <xs:include schemaLocation='Park.xsd'/>
   <xs:include schemaLocation='Phrase.xsd'/>
   <xs:include schemaLocation='Replace.xsd'/>
