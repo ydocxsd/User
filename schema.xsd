@@ -44,6 +44,7 @@
           <xs:element ref="Scenario" maxOccurs="unbounded"/>
           <xs:element ref="Text" maxOccurs="unbounded"/>
           <xs:element ref="Topic" maxOccurs="unbounded"/>
+          <xs:element ref="TopicImport" maxOccurs="unbounded"/>
           <xs:element ref="Variable" maxOccurs="unbounded"/>
         </xs:choice>
       </xs:sequence>
