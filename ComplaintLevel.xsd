@@ -6,6 +6,7 @@
         <xs:enumeration value='Primary'/>
         <xs:enumeration value='Secondary'/>
         <xs:enumeration value='Tertiary'/>
+        <xs:enumeration value='Injury'/>
       </xs:restriction>
     </xs:simpleType>
   </xs:attribute>
