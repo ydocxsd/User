@@ -6,6 +6,8 @@
       <xs:sequence>
         <xs:element ref="TextOption" minOccurs="0" maxOccurs="unbounded">
         </xs:element>        
+      <xs:attribute name="Key" type="xs:string" use="required" />
+      <xs:attribute name="Value" type="xs:string" use="required" />
       </xs:sequence>
       
       <xs:attribute name="Key" type="xs:string" use="required" />
