@@ -21,6 +21,7 @@
             <xs:enumeration value="Consult"/>
             <!-- Risk Items-->
             <xs:enumeration value="PrecriptionDrug"/>
+            <xs:enumeration value="Parenteral"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:attribute>
